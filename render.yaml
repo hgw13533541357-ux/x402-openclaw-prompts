@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: x402-openclaw-prompts
+    runtime: node
+    repo: https://github.com/hgw13533541357-ux/x402-openclaw-prompts
+    plan: free
+    branch: master
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: testnet
+      - key: WALLET_ADDRESS
+        sync: false
+      - key: PORT
+        value: 4021
