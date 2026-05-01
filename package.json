@@ -1,0 +1,22 @@
+{
+  "name": "x402-openclaw-prompts",
+  "version": "1.0.0",
+  "description": "OpenClaw AI Prompts Pack as x402 pay-per-request API service on Agentic Market",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "testnet": "NODE_ENV=testnet node server.js",
+    "mainnet": "NODE_ENV=mainnet node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0",
+    "@x402/express": "^2.11.0",
+    "@x402/evm": "^2.11.0",
+    "@x402/core": "^2.11.0",
+    "cors": "^2.8.5"
+  },
+  "keywords": ["x402", "openclaw", "ai-prompts", "agentic-market", "coinbase"],
+  "license": "MIT"
+}

@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  x402-openclaw-prompts:
+    build: .
+    ports:
+      - "4021:4021"
+    environment:
+      - WALLET_ADDRESS=${WALLET_ADDRESS}
+      - NODE_ENV=${NODE_ENV:-testnet}
+      - PORT=4021
+    restart: unless-stopped
